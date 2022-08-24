@@ -6,8 +6,10 @@
 
 Функция должна возвращать время в новой временной зоне.
 """
+
 import datetime
 import pytz
+
 
 def convert_date(timestamp, current_zone, new_zone):
     current_zone = pytz.timezone(current_zone)

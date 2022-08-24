@@ -4,6 +4,7 @@
 """
 import re
 
+
 def find_emails(text):
     match = re.findall(r'[\w.+-]+@[\w-]+\.[\w.-]+', text)
     return match

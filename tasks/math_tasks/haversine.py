@@ -24,6 +24,8 @@ https://en.wikipedia.org/wiki/Haversine_formula
 """
 import math
 EARTH_R = 6372795
+
+
 def distance(a_lat, a_lon, b_lat, b_lon):
     a_lat = float(a_lat) * math.pi / 180
     b_lat = float(b_lat) * math.pi / 180

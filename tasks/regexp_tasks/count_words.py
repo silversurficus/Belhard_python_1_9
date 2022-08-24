@@ -5,6 +5,7 @@
 """
 import re
 
+
 def count_words(file_path):
-    words=re.findall(r'\w+', open(f"{file_path}").read())
+    words = re.findall(r'\w+', open(f"{file_path}").read())
     return len(words)

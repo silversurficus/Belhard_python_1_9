@@ -6,12 +6,14 @@
 """
 import re
 
+
 def check_login(string):
     pattern = re.compile(r"^(?=.{5,20}$)([\w]+)$")
     if not pattern.match(string):
         print("faaa")
         raise ValueError
     return string
+
 
 check_login("aaaa__")
 check_login("aaaaAAAVV")

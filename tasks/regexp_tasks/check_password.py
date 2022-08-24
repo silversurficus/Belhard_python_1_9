@@ -12,6 +12,7 @@
 """
 import re
 
+
 def check_login(string):
     pattern = re.compile(r"^(?=.{8,40}$)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[$&+,:;=?@#|'<>.^*()%!-])$")
     if not pattern.match(string):

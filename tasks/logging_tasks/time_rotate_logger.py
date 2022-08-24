@@ -9,7 +9,7 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 
 logging.basicConfig(
-    level = logging.DEBUG,
+    level=logging.DEBUG,
     filename="log_journal"
 )
 my_loger = logging.getLogger(__name__)
