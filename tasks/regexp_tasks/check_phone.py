@@ -11,3 +11,10 @@
 
 Например: +375(29)365-12-12
 """
+import re
+
+def check_login(string):
+    pattern = re.compile("^[+][\d]{3}[(](?:29|33|44|25$)[)][\d]{3}-[\d]{2}-[\d]{2}$")
+    if not pattern.match(string):
+        raise ValueError
+    return string
